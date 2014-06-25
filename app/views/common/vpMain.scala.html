@@ -1,0 +1,10 @@
+@(title: String)(content: Html)(implicit lang: Lang)
+
+@import play.api.Play
+@import play.api.Play.current
+
+@if(Play.isTest) {
+    @vpMainTest(title)(content)
+} else {
+    @vpMainDefault(title)(content)
+}

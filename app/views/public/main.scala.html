@@ -1,0 +1,17 @@
+@(title: String, currentForm: Option[Form[_]] = None)(content: Html)(implicit lang: Lang)
+
+@import views.html.common.vpMain
+
+@vpMain(title) {
+    <div class="victorias-property">
+        <div class="section-content">
+            <h1>@title</h1>
+@{/*
+            @if (currentForm.isDefined) {
+                @errorsSummary(currentForm.get)
+            }
+*/}
+            @content
+        </div>
+    </div>
+}

@@ -1,0 +1,64 @@
+@(title: String)(content: Html)(implicit lang: Lang)
+
+<!DOCTYPE html>
+<!--[if IE 6]>         <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@title</title>
+
+    @{/*
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("screen.min.css")" type="text/css">
+    */}
+
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("screen.css")" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <div role="banner" id="global-header">
+        @{ /*
+        <div class="header-wrapper">
+            <div class="header-global">
+                <div class="header-logo">
+                    <a href="https://www.gov.uk" title="Go to the gov.uk homepage" id="logo" class="content">
+                        <img src="@routes.Assets.at("images/gov.uk_logotype-2x.png")" alt="GOV.UK">
+                    </a>
+                </div>
+
+                <div class="header-phase">
+                    <h1 class="page-title beta"><strong>@{Messages("main.banner")}</strong> <span aria-hidden="true">beta</span></h1>
+                    <h2>
+                        <a href="">@{Messages("main.banner.help")}</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        */}
+    </div>
+    <!-- end header -->
+    <!-- start main -->
+    <div role="main" id="main">
+        @content
+    </div>
+    <!-- end main -->
+    <!-- start footer -->
+    <div class="group js-footer" id="footer" role="contentinfo">
+        <div class="footer-wrapper victorias-property-footer">
+            <div class="footer-meta">
+                <div class="copyright">
+                    &copy; Victoria's Property
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+</body>
+</html>
