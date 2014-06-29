@@ -16,7 +16,7 @@
     <link rel="stylesheet" media="screen" href="@routes.Assets.at("screen.min.css")" type="text/css">
     */}
 
-    <link rel="stylesheet" media="screen" href="@routes.Assets.at("screen.css")" type="text/css">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("screen.min.css")" type="text/css">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
     <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
 </head>
@@ -24,24 +24,17 @@
 <body>
     <!-- start header -->
     <div role="banner" id="global-header">
-        @{ /*
         <div class="header-wrapper">
             <div class="header-global">
                 <div class="header-logo">
-                    <a href="https://www.gov.uk" title="Go to the gov.uk homepage" id="logo" class="content">
-                        <img src="@routes.Assets.at("images/gov.uk_logotype-2x.png")" alt="GOV.UK">
-                    </a>
+                    Victoria's Property
                 </div>
 
                 <div class="header-phase">
                     <h1 class="page-title beta"><strong>@{Messages("main.banner")}</strong> <span aria-hidden="true">beta</span></h1>
-                    <h2>
-                        <a href="">@{Messages("main.banner.help")}</a>
-                    </h2>
                 </div>
             </div>
         </div>
-        */}
     </div>
     <!-- end header -->
     <!-- start main -->
@@ -54,7 +47,7 @@
         <div class="footer-wrapper victorias-property-footer">
             <div class="footer-meta">
                 <div class="copyright">
-                    &copy; Victoria's Property
+                    &copy;&nbsp;@{Messages("footer.text")}&nbsp;@play.Configuration.root().getString("phoneNumber")
                 </div>
             </div>
         </div>

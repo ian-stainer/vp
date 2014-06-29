@@ -1,0 +1,25 @@
+// config file
+
+// include the '.' or '#' for the class/id
+// the html class needs to match
+$htmlNamespace: ".victorias-property";
+
+// device widths
+$device-x-small: 350px;
+$device-small: 640px;
+$device-medium: 767px;
+$device-large: 980px;
+
+// set to "alpha" or "beta" to change colours globally
+$phase: "beta";
+
+// filepaths
+/*
+$image-path: "images/";
+
+// app colours
+$form-element-bg: #f9f9f9;
+$form-element-border: #BFC1C3;
+
+$error-bg: #fef7f7;
+*/

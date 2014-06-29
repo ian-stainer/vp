@@ -1,0 +1,76 @@
+#global-header {
+  input:focus {
+    outline: 3px solid #ffbf47;
+  }
+  h1 a:focus {
+    background-color: transparent;
+    outline: none;
+  }
+  a:focus {
+    color: #0b0c0c;
+  }
+  .header-wrapper {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .header-global {
+      &:after, .header-logo:after, .site-search:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    }
+    .ie6 & {
+      margin-bottom:15px;
+    }
+  }
+
+  background-color: $header-colour;
+  width: 100%;
+
+  .header-wrapper {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0.5em 15px;
+    .header-global {
+      .header-logo, .site-search {
+        width: 49%;
+        float: left;
+      }
+      .header-logo .content, .site-search .content {
+        margin: 0 15px;
+      }
+      .header-logo {
+        margin: 5px 0 2px;
+      }
+      .site-search {
+        float: right;
+      }
+    }
+  }
+  #logo {
+    float: left;
+    position: relative;
+    width: 166px;
+    height: 30px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      left: -166px;
+      top: 0;
+      border: none;
+      width: 200%;
+      height: 300%;
+    }
+    &:hover img {
+      top: -30px;
+    }
+  }
+}
+
+.beta-notice {
+  background-color: $orange;
+  color: $white;
+}
