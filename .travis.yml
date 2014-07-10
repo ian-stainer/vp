@@ -1,6 +1,6 @@
 language: scala
 
-before install:
+before_install:
  - echo "Installing sass dependency..."
  - gem install sass --version 3.2.13
  - echo "Done."
