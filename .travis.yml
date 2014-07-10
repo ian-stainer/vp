@@ -16,6 +16,5 @@ matrix:
 
 notifications:
   email:
-    recipients:
-        ian.stainer@valtech.co.uk
-        scott.walker@valtech.co.uk
+    - ian.stainer@valtech.co.uk
+    - scott.walker@valtech.co.uk
