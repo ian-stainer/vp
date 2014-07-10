@@ -15,4 +15,7 @@ matrix:
   fast_finish: true
 
 notifications:
-  email: false
+  email:
+    recipients:
+        ian.stainer@valtech.co.uk
+        scott.walker@valtech.co.uk
