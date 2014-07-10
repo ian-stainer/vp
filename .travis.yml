@@ -7,3 +7,5 @@ matrix:
   fast_finish: true
 notifications:
   email: false
+before install:
+ - gem install sass --version 3.2.13
